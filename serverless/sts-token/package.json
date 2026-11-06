@@ -1,0 +1,16 @@
+{
+  "name": "cloudshare-sts-token",
+  "version": "1.0.0",
+  "description": "云享 CloudShare · FunctionGraph 函数：下发 OBS STS 临时凭证与预签名 URL",
+  "main": "index.js",
+  "scripts": {
+    "package": "npm install --production && zip -r ../sts-token.zip ."
+  },
+  "dependencies": {
+    "@huaweicloud/hcs-sdk-obs": "^3.23.4",
+    "@huaweicloud/hcs-sdk-iam": "^3.23.4"
+  },
+  "engines": {
+    "node": ">=14"
+  }
+}

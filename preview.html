@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>文件预览 · 云享 CloudShare</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <div class="logo">☁️</div>
+      <div class="brand-text">
+        <h1>云享 <span class="brand-en">CloudShare</span></h1>
+        <p class="brand-sub">文件预览</p>
+      </div>
+    </div>
+    <div class="topbar-right">
+      <a href="index.html" class="btn btn-ghost">← 返回</a>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="card">
+      <div class="card-head">
+        <h3 id="pvTitle">📄 文件预览</h3>
+        <div class="card-actions">
+          <button id="btnDownload" class="btn btn-primary">⬇️ 下载</button>
+        </div>
+      </div>
+      <div id="previewBox" class="preview-box">
+        <div class="preview-loading">加载中…</div>
+      </div>
+    </section>
+  </main>
+
+  <div id="toast" class="toast" hidden></div>
+  <footer class="footer"><p>云享 CloudShare · 华为 ICT 大赛参赛作品</p></footer>
+
+  <script src="js/config.js"></script>
+  <script src="js/obs-client.js"></script>
+  <script src="js/preview.js"></script>
+</body>
+</html>

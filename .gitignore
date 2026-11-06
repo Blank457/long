@@ -1,0 +1,7 @@
+.publish-tmp/
+.agents/
+.codeartsdoer/
+node_modules/
+sts-creds.json
+sts-creds.sh
+*.log

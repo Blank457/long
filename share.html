@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>分享访问 · 云享 CloudShare</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <div class="logo">☁️</div>
+      <div class="brand-text">
+        <h1>云享 <span class="brand-en">CloudShare</span></h1>
+        <p class="brand-sub">分享访问</p>
+      </div>
+    </div>
+    <div class="topbar-right">
+      <a href="index.html" class="btn btn-ghost">← 返回主页</a>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="card">
+      <div class="card-head"><h3>🔗 文件分享</h3></div>
+      <div id="shareView" class="share-view">
+        <div id="stepCode" class="step">
+          <div class="share-icon">🔒</div>
+          <h2 id="shareTitle">请输入提取码</h2>
+          <p class="muted" id="shareHint">该分享受提取码保护，请输入 6 位提取码以查看文件</p>
+          <div class="code-input-row">
+            <input id="codeInput" class="input code-input" maxlength="6" placeholder="提取码" autocomplete="off" />
+            <button id="btnVerify" class="btn btn-primary">查看</button>
+          </div>
+        </div>
+
+        <div id="stepReady" class="step" hidden>
+          <div class="share-icon">📄</div>
+          <h2 id="fileName">文件名</h2>
+          <p class="muted" id="fileMeta"></p>
+          <div class="share-actions">
+            <button id="btnPreview" class="btn btn-primary">👁 在线预览</button>
+            <button id="btnDownload" class="btn">⬇️ 下载</button>
+          </div>
+        </div>
+
+        <div id="stepError" class="step" hidden>
+          <div class="share-icon">⚠️</div>
+          <h2>分享不存在或已失效</h2>
+          <p class="muted" id="errHint">该分享链接可能已过期或被取消</p>
+          <a href="index.html" class="btn btn-ghost">返回主页</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div id="toast" class="toast" hidden></div>
+  <footer class="footer"><p>云享 CloudShare · 华为 ICT 大赛参赛作品</p></footer>
+
+  <script src="js/config.js"></script>
+  <script src="js/obs-client.js"></script>
+  <script src="js/share.js"></script>
+</body>
+</html>
