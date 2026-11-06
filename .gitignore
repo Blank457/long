@@ -1,7 +1,9 @@
 .publish-tmp/
 .agents/
+.claude/
 .codeartsdoer/
 node_modules/
+skills-lock.json
 sts-creds.json
 sts-creds.sh
 *.log
